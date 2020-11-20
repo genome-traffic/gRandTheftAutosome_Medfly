@@ -14,7 +14,8 @@ setwd("/Users/nikolai/Desktop/model/")
 #type <- "ffer_tra"
 #type <- "DOM_tra"
 #type <- "tra"
-type <- "DOM_tra_xxs"
+#type <- "DOM_tra_xxs"
+type <- ffer_Xshred
 
 input <- paste("Output_", type ,".csv", sep="")
 data<-read.table(input, header=F, sep=",")

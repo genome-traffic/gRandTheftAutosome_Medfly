@@ -48,19 +48,21 @@ data<-read.table(input, header=F, sep=",")
 d5 <- process_data(data)
 d5$Type <- "tra(dom)"
 
-type <- "DOM_tra_xxs"
+type <- "ffer_Xshred"
 input <- paste("Output_", type ,".csv", sep="")
 data<-read.table(input, header=F, sep=",")
 d6 <- process_data(data)
-d6$Type <- "tra(dom)sterile"
+d6$Type <- "ffer_Xshred"
 
 #a <- d1
 a <- rbind(d1, d2, d3, d4, d5, d6)
 
 pEX <- ggplot(data=a, aes(x=Generation,y=Population, group=Type)) +
-  geom_line(aes(color=Type), size=2) +
+  geom_line(aes(color=Type), size=3) +
   xlim(5,20) +
   ylim(0,100) +
+  scale_color_viridis(discrete = TRUE,option = "D") +
+  theme(panel.border=element_blank()) +
   ylab("Surviving Populations (%)") 
 print(pEX)
 

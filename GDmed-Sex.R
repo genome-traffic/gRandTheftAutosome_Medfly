@@ -7,8 +7,9 @@ setwd("/Users/nikolai/Desktop/model/")
 #data<-read.table("Output.csv", header=F, sep=",")
 
 #type <- "white_tra"
-type <- "DOM_tra_xxs"
+#type <- "DOM_tra_xxs"
 #type <- "ffer_tra"
+type <- "ffer_Xshred"
 #type <- "DOM_tra"
 #type <- "tra"
 
